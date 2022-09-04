@@ -197,26 +197,111 @@
 
 // Task Objects
 
-const dataOne = {
-    name: 'Jack', 
-    lastname: 'White', 
-    weight: 79, 
-    height: 1.70,
-    calcBmi: function() {
-        this.bmi = this.weight / (this.height * this.height);
-        return this.bmi;
-    }
-};
+// const dataOne = {
+//     name: 'Jack', 
+//     lastname: 'White', 
+//     weight: 79, 
+//     height: 1.70,
+//     calcBmi: function() {
+//         this.bmi = this.weight / (this.height * this.height);
+//         return this.bmi;
+//     }
+// };
 
-const dataTwo = {
-    name: 'Mike', 
-    lastname: 'Black', 
-    weight: 91, 
-    height: 1.93,
-    calcBmi: function() {
-        this.bmi = this.weight / (this.height * this.height);
-        return this.bmi;
-    }
-};
+// const dataTwo = {
+//     name: 'Mike', 
+//     lastname: 'Black', 
+//     weight: 91, 
+//     height: 1.93,
+//     calcBmi: function() {
+//         this.bmi = this.weight / (this.height * this.height);
+//         return this.bmi;
+//     }
+// };
 
-console.log(`${dataOne.name} ${dataOne.lastname} BMI (${dataOne.calcBmi()}) is ${dataOne.calcBmi() > dataTwo.calcBmi() ? 'higher' : 'less'} than ${dataTwo.name} ${dataTwo.lastname} (${dataTwo.calcBmi()})`);
+// console.log(`${dataOne.name} ${dataOne.lastname} BMI (${dataOne.calcBmi()}) is ${dataOne.calcBmi() > dataTwo.calcBmi() ? 'higher' : 'less'} than ${dataTwo.name} ${dataTwo.lastname} (${dataTwo.calcBmi()})`);
+//------------------------------------
+
+// Loop
+
+// for(let rep = 0; rep <= 30; rep += 7) {
+//     console.log(`${rep}`);
+//     console.log('Do something 1');
+// }
+
+// console.log('End cycle');
+
+// const user123 = ['Dima', 'Mesh', 1979, 'student', ['Kirill', 'Artya'], false];
+
+// const types = [];
+
+// for(let i = 0; i < user123.length; i++) {
+//     console.log(user123[i], typeof user123[i]);
+//     types[i] = typeof user123[i];
+// }
+
+// console.log(types);
+
+// const birthYears = [1974, 1987, 1988, 1976];
+// const ages = [];
+
+// for(let i = 0; i < birthYears.length; i++) {
+//     // ages.push(2022 - birthYears[i]);
+//     ages[i] = 2022 - birthYears[i];
+// }
+
+// console.log(ages);
+
+// console.log('LOOP IN LOOP')
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//     console.log(`Exercise ${exercise}`);
+
+//     for (let rep = 1; rep <= 5; rep++) {
+//         console.log(`Ex ${exercise} Rep ${rep}`);
+//     }
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`Push ups repetition ${rep}`);
+//     rep++;
+// }
+//---------------------------------
+// let diceNumber = Math.trunc(Math.random() * 6) + 1;
+
+// while (diceNumber !== 6) {
+//     console.log(diceNumber);
+//     diceNumber = Math.trunc(Math.random() * 6) + 1;
+// }
+//---------------------------------
+
+
+// Task Tips Calculator New
+
+
+const calculateTips = bill => bill < 20 ? bill * 0.2 : bill * 0.15;
+const bills = [31, 95, 276, 540, 27, 205, 11, 1180, 96, 57];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calculateTips(bills[i]));
+    totals.push(bills[i] + calculateTips(bills[i]));
+}
+
+console.log(bills);
+console.log(tips);
+console.log(totals);
+
+
+const calculateAverage = function(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+       sum = sum + arr[i];
+    }
+    return sum / arr.length;
+ }
+ console.log(calculateAverage(bills));
+ console.log(calculateAverage(tips));
+ console.log(calculateAverage(totals));
