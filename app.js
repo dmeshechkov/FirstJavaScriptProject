@@ -9,14 +9,12 @@
 // alert('Are you overweight?' + ' ' + areYouOverweight);
 //-------------------------------------
 
-
 // Application Overweight with If&Else
 
 // const myWeight = prompt('Enter your weight (kg)');
 // const myHeight = prompt('Enter your height (m)');
 // const bodyMassIndex = myWeight / Math.pow(myHeight, 2);
 // const areYouOverweight = bodyMassIndex >= 25;
-
 
 // if (areYouOverweight) {
 //     alert(`Your overweight is too much ${bodyMassIndex - 25}`);
@@ -27,7 +25,6 @@
 // }
 //-------------------------------------
 
-
 // Application Ternary operator
 
 // const age = prompt('Enter your age');
@@ -36,21 +33,19 @@
 // alert(message);
 //-------------------------------------
 
-
-    // Application Sales Departments Task
+// Application Sales Departments Task
 
 // function getAverage(month1, month2, month3) {
 //     return (month1 + month2 + month3) / 3;
 //     }
 //-------------------------------------
 
-
 // // 1 quater
 
 // const dept1AverSales1 = getAverage(35467, 29842, 38501);
 // const dept2AverSales1 = getAverage(70533, 50121, 33899);
 // console.log(dept1AverSales1, dept2AverSales1);
- 
+
 // // 2 quater
 
 // const dept1AverSales2 = getAverage(50301, 121984, 19207);
@@ -73,7 +68,7 @@
 //                 console.log(`Dept 2 will get a bonus ${persBonus}%`);
 //             } else {
 //                 console.log('No bonus');
-//             } 
+//             }
 //     } else {
 //         console.log('No bonus');
 //     }
@@ -82,7 +77,6 @@
 // printBonus(dept1AverSales1, dept2AverSales1);
 // printBonus(dept1AverSales2, dept2AverSales2);
 //-------------------------------------
-
 
 // Application Tips Calculator Task
 
@@ -95,7 +89,6 @@
 
 // console.log(calculateTips);
 //-------------------------------------
-
 
 // Задачник
 
@@ -113,7 +106,6 @@
 
 // female();
 //-------------------------------------
-
 
 // let day = prompt('Input number from 1 to 7');
 // if (day == 1) {
@@ -135,7 +127,6 @@
 // }
 //-------------------------------------
 
-
 // let firstName = prompt('What is your name?');
 // let lastName = prompt('What is your last name?');
 // let old = prompt('How old are you?');
@@ -147,24 +138,21 @@
 // greeting();
 //-------------------------------------
 
-
 // let age = prompt('How old are you?');
 
 // let message = (age < 17) ? 'Hi, child!' :
 //   (age < 31) ? 'Hi, young men!' :
-//   (age < 56) ? 'Hi, men!' : 
-//   (age < 100) ? 'Hi, old men!' : 
+//   (age < 56) ? 'Hi, men!' :
+//   (age < 100) ? 'Hi, old men!' :
 //   'Are you ded?';
 
 // alert( message );
 //-------------------------------------
 
-
-
 // const dimaObject = {
-//     name: 'Dima', 
-//     lastname: 'Mesh', 
-//     birthyear: 1979, 
+//     name: 'Dima',
+//     lastname: 'Mesh',
+//     birthyear: 1979,
 //     job: 'student',
 //     familyMembers: ['Kirill', 'Artya', 'Anna']
 // };
@@ -175,9 +163,9 @@
 // console.log(`${dimaObject.name} has ${dimaObject.familyMembers.length} family members and the first one is ${dimaObject.familyMembers[0]}`);
 
 // const dimaObject = {
-//     name: 'Dima', 
-//     lastname: 'Mesh', 
-//     birthyear: 1979, 
+//     name: 'Dima',
+//     lastname: 'Mesh',
+//     birthyear: 1979,
 //     job: 'student',
 //     familyMembers: ['Kirill', 'Artya', 'Anna'],
 //     hasDriverLicense: false,
@@ -194,13 +182,12 @@
 
 // console.log(dimaObject.getSummary());
 
-
 // Task Objects
 
 // const dataOne = {
-//     name: 'Jack', 
-//     lastname: 'White', 
-//     weight: 79, 
+//     name: 'Jack',
+//     lastname: 'White',
+//     weight: 79,
 //     height: 1.70,
 //     calcBmi: function() {
 //         this.bmi = this.weight / (this.height * this.height);
@@ -209,9 +196,9 @@
 // };
 
 // const dataTwo = {
-//     name: 'Mike', 
-//     lastname: 'Black', 
-//     weight: 91, 
+//     name: 'Mike',
+//     lastname: 'Black',
+//     weight: 91,
 //     height: 1.93,
 //     calcBmi: function() {
 //         this.bmi = this.weight / (this.height * this.height);
@@ -261,6 +248,7 @@
 //         console.log(`Ex ${exercise} Rep ${rep}`);
 //     }
 // }
+//---------------------------------
 
 // let rep = 1;
 // while (rep <= 10) {
@@ -268,6 +256,7 @@
 //     rep++;
 // }
 //---------------------------------
+
 // let diceNumber = Math.trunc(Math.random() * 6) + 1;
 
 // while (diceNumber !== 6) {
@@ -276,32 +265,130 @@
 // }
 //---------------------------------
 
-
 // Task Tips Calculator New
 
+// const calculateTips = bill => bill < 20 ? bill * 0.2 : bill * 0.15;
+// const bills = [31, 95, 276, 540, 27, 205, 11, 1180, 96, 57];
+// const tips = [];
+// const totals = [];
 
-const calculateTips = bill => bill < 20 ? bill * 0.2 : bill * 0.15;
-const bills = [31, 95, 276, 540, 27, 205, 11, 1180, 96, 57];
-const tips = [];
-const totals = [];
+// for (let i = 0; i < bills.length; i++) {
+//     tips.push(calculateTips(bills[i]));
+//     totals.push(bills[i] + calculateTips(bills[i]));
+// }
 
-for (let i = 0; i < bills.length; i++) {
-    tips.push(calculateTips(bills[i]));
-    totals.push(bills[i] + calculateTips(bills[i]));
-}
+// console.log(bills);
+// console.log(tips);
+// console.log(totals);
 
-console.log(bills);
-console.log(tips);
-console.log(totals);
+// const calculateAverage = function(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//        sum = sum + arr[i];
+//     }
+//     return sum / arr.length;
+//  }
+//  console.log(calculateAverage(bills));
+//  console.log(calculateAverage(tips));
+//  console.log(calculateAverage(totals));
 
+// ----------------------------------------
 
-const calculateAverage = function(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-       sum = sum + arr[i];
+// let str = 'abcde';
+// console.log(str[0]);
+
+// const x = 1;
+// let hour = x * 3600 * 24;
+
+// console.log(hour);
+
+// const age = 43;
+// console.log("I'm" + ' ' + age + ' ' + 'years old');
+
+// const number = prompt('Input any number');
+// alert(Math.pow(number, 2));
+
+// let num = '123456';
+// console.log(num[0] * num[1] * num[2] * num[3] * num[4] * num[5]);
+
+// const x = 1;
+// let hour = x * 3600;
+// let day = x * 3600 * 24;
+// let month = x * 3600 * 24 * 30;
+// console.log(hour, day, month);
+//---------------------------------
+
+// let arr = ['Hi', 'world', '!'];
+// console.log(arr[0] + ' ' + arr[1] + arr[2]);
+
+// let text = arr[0] + ' ' + arr[1] + arr[2];
+// console.log(text);
+
+// arr.splice(0, 1, 'By');
+// console.log(arr[0] + ' ' + arr[1] + arr[2]);
+//---------------------------------
+
+// const objNik = {
+//   name: 'Nik',
+//   salary: 1000,
+// };
+
+// const objVas = {
+//   name: 'Vasile',
+//   salary: 1300,
+// };
+
+// const objPet = {
+//   name: 'Peter',
+//   salary: 900,
+// };
+
+// console.log(objPet.salary);
+// console.log(objNik.salary);
+
+// let arr = {
+//   ru: ['голубой', 'красный', 'зеленый'],
+//   en: ['blue', 'red', 'green'],
+// };
+
+// console.log(arr.ru[0]);
+//---------------------------------
+
+// let arr1 = [33, 67, 20, 123, 54];
+// let arr2 = [80, 56, 34, 145];
+
+// let arr3 = arr1.concat(arr2);
+// console.log(arr3);
+
+// const calcAmpl = function (arr3) {
+//   let max = arr3[0];
+//   let min = arr3[0];
+
+//   for (let i = 1; i < arr3.length; i++) {
+//     if (arr3[i] > max) {
+//       max = arr3[i];
+//     }
+//     if (arr3[i] < min) {
+//       min = arr3[i];
+//     }
+//   }
+//   console.log(min, max);
+//   return max - min;
+// };
+
+// console.log(calcAmpl(arr3));
+//---------------------------------
+
+let nums = [2, 8, 7, 15, 33, 4];
+const target = 41;
+const x = 1;
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] + nums[i + x] == target) {
+    console.log([nums[i], nums[i + x]]);
+  } else
+    for (let x = 1; x < nums.length; x++) {
+      if (nums[i] + nums[i + x] == target) {
+        console.log([nums[i], nums[i + x]]);
+      }
     }
-    return sum / arr.length;
- }
- console.log(calculateAverage(bills));
- console.log(calculateAverage(tips));
- console.log(calculateAverage(totals));
+}
