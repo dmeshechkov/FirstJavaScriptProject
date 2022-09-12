@@ -379,16 +379,49 @@
 // console.log(calcAmpl(arr3));
 //---------------------------------
 
-let nums = [2, 8, 7, 15, 33, 4];
-const target = 41;
-const x = 1;
-for (let i = 0; i < nums.length; i++) {
-  if (nums[i] + nums[i + x] == target) {
-    console.log([nums[i], nums[i + x]]);
-  } else
-    for (let x = 1; x < nums.length; x++) {
-      if (nums[i] + nums[i + x] == target) {
-        console.log([nums[i], nums[i + x]]);
-      }
-    }
-}
+// let nums = [2, 8, 7, 15, 33, 4];
+// const target = 41;
+// const x = 1;
+// for (let i = 0; i < nums.length; i++) {
+//   if (nums[i] + nums[i + x] == target) {
+//     console.log([nums[i], nums[i + x]]);
+//   } else
+//     for (let x = 1; x < nums.length; x++) {
+//       if (nums[i] + nums[i + x] == target) {
+//         console.log([nums[i], nums[i + x]]);
+//       }
+//     }
+// }
+//---------------------------------
+
+// const celciusToKelvin = function () {
+//   const meauserement = {
+//     type: 'temp',
+//     unit: 'celcius',
+//     value: Number(prompt('Temperature in Celcius: ')),
+//   };
+
+//   console.table(meauserement);
+
+//   console.log(meauserement.value);
+
+//   const kelvin = meauserement.value + 273;
+//   return kelvin;
+// };
+
+// console.log(celciusToKelvin());
+//---------------------------------
+
+// let data1 = [49, 51, 63];
+// console.log(data1);
+
+// const printHumiditiesForecast = function (arr) {
+//   let str = '... ';
+
+//   for (let i = 0; i < arr.length; i++) {
+//     str += `${arr[i]}% in ${i + 1} days ... `;
+//   }
+//   console.log(str);
+// };
+// printHumiditiesForecast(data1);
+//---------------------------------
